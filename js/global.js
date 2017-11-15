@@ -6,6 +6,18 @@ var defalutSetting = {
         }]
 }
 
+
+$.ajax({
+  type:'get',
+  url:'../data.json',
+  success:function(res){
+    console.log(res);
+  },
+  error:function(err){
+    console.log("请求错误")
+  }
+})
+
 var mySwiper = new Swiper(defalutSetting.el, {//swiper默认配置 不许改动
     direction: 'vertical',
     loop:defalutSetting.loop,
