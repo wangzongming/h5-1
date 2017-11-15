@@ -1,0 +1,58 @@
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+  /* border:1px solid red; */
+  box-sizing: border-box;
+}
+
+/* 第一页 */
+.pageOne {
+  background: url("../img/bg1.jpg") no-repeat;
+  background-size: cover;
+}
+
+.pageOne .img1{
+  width:100%;
+  border:1px solid rgba(0,0,0,0.8);
+  color:red;
+  font-size:.5rem;
+  text-align:center;
+  box-sizing: border-box;
+  padding:1rem;
+  background:rgba(0,0,0,0.5);
+}
+.pageOne .img1 img{
+  width:100%;
+}
+
+.pageOne .tit{
+  color:pink;
+  font-size:.6rem;
+  text-align: center;
+  padding:2rem 0;
+  box-sizing: border-box;
+}
+
+/* 第二页 */
+.pageTwo {
+  background: url("../img/6ddfb32dfcb36cfee63745518935e6cd.jpg") no-repeat;
+  background-size: cover;
+}
+
+.pageTwo .img1{
+  width:100%;
+  font-size:.5rem;
+  text-align:center;
+  box-sizing: border-box;
+  padding:1rem;
+}
+.pageTwo .img1 img{
+  width:100%;
+}
+.pageTwo .tit{
+  color:pink;
+  font-size:.6rem;
+  text-align: center;
+  padding:.2rem 0;
+  box-sizing: border-box;
+}
