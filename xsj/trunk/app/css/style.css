@@ -7,8 +7,8 @@
 
 /* 第一页 */
 .pageOne {
-  background: url("../img/bg1.jpg") no-repeat;
-  background-size: cover;
+  /* background: url("../img/bg.jpg") no-repeat; */
+  /* background-size: cover; */
 }
 
 .pageOne .img1{
