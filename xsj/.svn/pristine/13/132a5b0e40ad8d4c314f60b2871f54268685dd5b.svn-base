@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>请稍等...</title>
+</head>
+<body>
+    <script src="js/lib/jquery-3.2.1.min.js"></script>
+    <script src="js/lib/fiexSize.js"></script>
+    <script>
+        $.ajax({
+            type:'get',
+            url:'./admin.json',
+            success:function(res){
+                switch(res.state){
+                    case '0'://可以答题
+                        window.location.href = './home.html';
+                        break;
+                    case '1'://答过题了
+                        window.location.href = './after.html';
+                        break;
+                    case '2'://无权限
+                        window.location.href = './noJurisdiction.html';
+                        break;
+                }
+                console.log(res)
+            },
+            error:function(err){
+                alert("服务器错误！请联系管理员。")
+            }
+        })
+    </script>
+</body>
+</html>

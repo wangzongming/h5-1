@@ -55,9 +55,6 @@
   border-radius: 50%;
   text-align: center;
   line-height: 1.2rem;
-}
-
-.musicBtn{
   animation: music 1s infinite ;
   -webkit-animation:music 1.5s infinite  linear;
 }

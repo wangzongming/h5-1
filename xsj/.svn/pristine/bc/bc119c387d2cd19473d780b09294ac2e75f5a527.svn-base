@@ -6,39 +6,17 @@
   <title>元宵</title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   <link rel="stylesheet" href="./css/lib/swiper.min.css">
-  <!-- <link rel="stylesheet" href="./js/lib/layer.css"/> -->
   <link rel="stylesheet" href="./css/lib/animate.min.css">
   <link rel="stylesheet" href="./css/lib/global.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- 首页 -->
-  <div id="indexPage">
-    <div class="explainCon">
-      <b>游戏说明</b>
-      <p>玩家点击开始游戏后不可返回</p>
-      <p>答对三题即可获得神秘大奖</p>
-      <p>.....</p>
-    </div>
-
-    <div class="aText">提示:<p class="aTextP">点击开始按钮即可开始游戏！<p></div>
-    
-    <div class="ranking">
-      <span class="ranking-btn">排行榜</span>
-      <div class="rankingCon"></div>
-    </div>
-
-    <div class="startBtnDiv">
-      <span>开始游戏</span>
-    </div>
-  </div>
-
-  <!-- 打过题了 -->
-  <div></div>
-
   <div id="wzm"></div>
 
+
+
+  
   <!-- 举报 -->
   <!-- <div id="report" onclick="window.location.href='http://www.cyberpolice.cn/wfjb/frame/impeach/chooseImpeachAnonymous.jsp'">投诉</div> -->
 
@@ -73,13 +51,14 @@
     <!-- </section> -->
 
     <!-- </div> -->
+
+    
     <!-- <div class="swiper-pagination"></div> -->
   </div>
   <script src="js/lib/jquery-3.2.1.min.js"></script>
   <script src="js/lib/fiexSize.js"></script>
   <script src="js/lib/swiper.min.js"></script>
   <script src="js/lib/swiper.animate.min.js"></script>
-  <script src="./js/lib/layer.js"></script>
   <script src="js/global.js"></script>
 </body>
 </html>
