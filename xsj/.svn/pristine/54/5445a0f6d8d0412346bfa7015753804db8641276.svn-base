@@ -1,0 +1,145 @@
+body{
+  background:  url("../img/bg.jpg") no-repeat, rgb(232, 59, 43);
+  background-size:100% 100%, 100% 100%; 
+  box-sizing: border-box;
+}
+
+.explainCon{
+  text-align: center;
+  width:5rem;
+  box-sizing: border-box;
+  /* border:1px solid blue; */
+  position: absolute;
+  top:3rem;
+  left:0;right:0;
+  margin:auto;
+  font-size:.5rem;
+}
+.explainCon p{
+  font-size:.4rem;
+  text-align: left;
+}
+.startBtnDiv{
+  position: absolute;
+  bottom:2rem;
+  text-align: center;
+  width: 100%;
+}
+.startBtnDiv span{
+  width:5rem;
+  height:1.2rem;
+  color:orangered;
+  letter-spacing: .1rem;
+  font-size:.6rem;
+  padding:.4rem;
+  box-sizing:border-box;
+  background: white;
+  box-shadow: 0 0 1rem wheat ;
+  border-radius: .6rem;
+  text-align: center;
+}
+.ranking-btn{
+  display: inline-block;
+  padding:.2rem .2rem;
+  background: orange;
+  position: absolute;
+  top:.2rem;
+  right:.1rem;
+  text-align: center;
+  font-size:.3rem;
+  border-radius: .2rem;
+  color:wheat;
+  font-weight: 700;
+}
+.rankingCon{
+  /* width:; */
+}
+.ranking-ul{
+  margin-top:-1rem;
+}
+.ranking-ul li{
+  list-style: none;
+  width:100%;
+  text-align: left;
+  border-bottom: 1px solid darkcyan;
+  /* border:1px solid red; */
+}
+.ranking-ul li div{
+  width:100%;
+  box-sizing: border-box;
+  padding:.3rem;
+}
+.ranking-ul li span{
+  width:32%;
+  /* border:1px solid red; */
+  display: inline-block;
+}
+
+.aText{
+  width:90%;
+  font-size: .5rem;
+  position: absolute;
+  bottom:4rem;
+  left:5%;
+  text-align: center;
+  color:aliceblue;
+}
+
+.swiper-slide{
+  width: 100%;
+  height: 100%;
+  /* border:1px solid red; */
+  box-sizing: border-box;
+}
+
+/* 第一页 */
+.pageOne {
+  /* background: url("../img/bg.jpg") no-repeat; */
+  /* background-size: cover; */
+}
+
+.pageOne .img1{
+  width:100%;
+  border:1px solid rgba(0,0,0,0.8);
+  color:red;
+  font-size:.5rem;
+  text-align:center;
+  box-sizing: border-box;
+  padding:1rem;
+  background:rgba(0,0,0,0.5);
+}
+.pageOne .img1 img{
+  width:100%;
+}
+
+.pageOne .tit{
+  color:pink;
+  font-size:.6rem;
+  text-align: center;
+  padding:2rem 0;
+  box-sizing: border-box;
+}
+
+/* 第二页 */
+.pageTwo {
+  background: url("../img/6ddfb32dfcb36cfee63745518935e6cd.jpg") no-repeat;
+  background-size: cover;
+}
+
+.pageTwo .img1{
+  width:100%;
+  font-size:.5rem;
+  text-align:center;
+  box-sizing: border-box;
+  padding:1rem;
+}
+.pageTwo .img1 img{
+  width:100%;
+}
+.pageTwo .tit{
+  color:pink;
+  font-size:.6rem;
+  text-align: center;
+  padding:.2rem 0;
+  box-sizing: border-box;
+}

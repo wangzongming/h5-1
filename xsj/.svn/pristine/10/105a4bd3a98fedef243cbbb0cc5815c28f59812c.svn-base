@@ -388,7 +388,7 @@ function playGame(res, cb) {
             setTimeout(function () {
               if(wxx.wSwiper.isEnd){//最后一页
                 wxx.wAlert('回首页', '确定。', function (index) {
-                  window.location.href = window.location.href 
+                  window.location.href = '/index.html?code=' + wxx.useCode;
                 })
               }else{
                 wxx.wSwiper.slideNext();
@@ -404,8 +404,8 @@ function playGame(res, cb) {
               if(wxx.wSwiper.isEnd){//最后一页
                 // window.location.href = '/index.html';
                 if(wxx.wSwiper.isEnd){//最后一页
-                  wxx.wAlert('所有题目以答完', '确定。', function (index) {
-                    window.location.href = window.location.href 
+                  wxx.wAlert('即将反回首页', '确定。', function (index) {
+                    window.location.href = '/index.html?code= ' + wxx.useCode;
                   })
                 }
               }else{
