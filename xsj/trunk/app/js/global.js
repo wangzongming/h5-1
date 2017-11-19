@@ -452,7 +452,6 @@ function playGame(res, cb) {
 
   var isautoplay = "autoplay";
   wxx.musicIsAutoPlay ? isautoplay = "autoplay" : isautoplay = '';
-
   if (wxx.musicBtn === true) {
     var $music = $('<div id="music" class="' + (wxx.musicIsAutoPlay ? 'musicBtn' : '') + '" >  <audio preload="load" id="musicMP3"  ' + isautoplay + '  src=" ' + wxx.musicUrl + ' "></audio></div>');
     $music.click(function () {//音乐"#musicMP3"

@@ -8,26 +8,29 @@
         <link href="./lib/layer/need/layer.css" rel="stylesheet">
     </head>
     <body>
-            <div id="indexPage">
+            <div id="indexPage" class="indexPage">
                 <span class="startBtn">开始游戏</span>
+                  <div class="ranking">
+                    <span class="ranking-btn">排行榜</span>
+                  </div>
             </div>
 
-            <div id="game">
-                    <div class="score">
+            <div id="game"  class="game">
+                    <div class="score"> 
                         <span class="score-label">得分：</span>
                         <span class="score-num">0</span>
                     </div>
                     <div class="timer">
                         <!-- <span class="timer-label">time：</span> -->
-                        <span class="timer-num">15</span>s
+                        <span class="timer-num">-</span>s
                     </div>
-
-                    <!-- <div class="over">游戏已结束</div> -->
+                    <div id="good">
+                        <span>赞！</span>
+                    </div>
 
                     <div class="per">
                         <img src="./img/per.gif" alt="">
                     </div>
-
 
                     <!-- <div class="sweet">
                         <span>我是糖果</span>
