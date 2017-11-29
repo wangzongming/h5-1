@@ -7,10 +7,18 @@ body{
     height:100%;
     /* border: 1px solid darkmagenta; */
     box-sizing: border-box;
-    perspective: 800;
-    -webkit-perspective: 800;
-    -moz-perspective: 800;
-    -ms-perspective: 800;
+    /* background: black; */
+    perspective: 1200;
+    -webkit-perspective: 1200;
+    -moz-perspective: 1200;
+    -ms-perspective: 1200;
+
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+
     overflow: hidden;
 }
 #indexPage{
@@ -19,6 +27,9 @@ body{
     position: relative;
     background: wheat;
     box-shadow: 0 0 5rem rgba(0, 0, 0, 1) inset;
+
+    transform:translate3d(0, 0, 0);
+    -webkit-transform:translate3d(0, 0, 0);
 }
 #indexPage .startBtn{
     display: inline-block;
@@ -40,6 +51,9 @@ body{
     background: white;
     box-shadow: 0 0 0.5rem white;
     animation: btn 0.8s infinite linear;
+
+    transform:translate3d(0, 0, 0);
+    -webkit-transform:translate3d(0, 0, 0);
 }
 @keyframes btn{
     0%{
@@ -59,32 +73,41 @@ body{
     width:100%;
     overflow: hidden;
     position: relative;
+    /* border:3px solid red; */
+    box-sizing: border-box;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 1) inset;
 
-    perspective: 800;
-    -webkit-perspective: 800;
-    -moz-perspective: 800;
-    -ms-perspective: 800;
+    transform:rotateX(1deg) translateZ(50px);
+    -webkit-transform:rotateX(1deg) translateZ(50px);
+    -ms-transform:rotateX(1deg) translateZ(50px);
+    -o-transform:rotateX(1deg) translateZ(50px);
 
-    transform-style: preserve-3d;
+     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
 
-    box-shadow: 0 0 5rem rgba(0, 0, 0, 1) inset;
+    /* perspective: 800;
+    -webkit-perspective:800;
+    -moz-perspective: 1200;
+    -ms-perspective: 1200; */
+
 }
 #game .per{
     width:1rem;
     position: absolute;
-    left:2rem;
-    margin:auto;
-    bottom:7rem;
-
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
     transition: 0.1s;
-    -ms-transition: 0.1s;
-    -moz-transition: 0.1s;
     -webkit-transition: 0.1s;
-    /* border:2px solid red; */
+    -ms-transition: 0.1s;
+    margin:auto;
+    /* bottom:8rem; */
+    bottom:70%;
     z-index: 99;
 
     -webkit-transform-style: preserve-3d;
@@ -92,10 +115,15 @@ body{
     -o-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
 
+    /* transform:translate3d(0, 0, 0); */
+    /* -webkit-transform:translate3d(0, 0, 0); */
+
 }
 #game .per img{
     width:100%;
     vertical-align: middle;
+    transform:translate3d(0, 0, 0);
+    -webkit-transform:translate3d(0, 0, 0);
 }
 
 
@@ -106,6 +134,10 @@ body{
 }
 .score .score-label{
     font-weight:700;
+
+    
+    transform:translate3d(0, 0, 0);
+    -webkit-transform:translate3d(0, 0, 0);
 }
 .timer {
     font-size:.6rem;
@@ -114,6 +146,10 @@ body{
     right:.2rem;
     color:orange;
     top:.3rem;
+
+    
+    transform:translate3d(0, 0, 0);
+    -webkit-transform:translate3d(0, 0, 0);
 }
 
 #good{
@@ -126,21 +162,28 @@ body{
     right:.5rem;
     top:1rem;
     z-index: 99;
+
+    transform:translate3d(0, 0, 0);
+    -webkit-transform:translate3d(0, 0, 0);
 }
 
 .sweet{
     width:1rem;
     height:1.5rem;
     border-radius:.1rem;
-    background:rgba(0, 0, 0,0.4);
-    border:1px solid salmon;
+    /* background:rgba(0, 0, 0,0.4); */
+    /* border:1px solid salmon; */
     position: absolute;
     top:100%;
     left:0rem;
-    color:red;
-    
+    /* color:red; */
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -ms-transition: 0.1s;
     font-size:.3rem;
-    animation:  sweet 4s 1 linear;
+    animation:  sweet 3.5s 1 ease-out;
+    transform:translate3d(0, 0, 800px);
+    -webkit-transform:translate3d(0, 0, 800px);
 }
 
 @keyframes sweet{
@@ -148,7 +191,7 @@ body{
         /* top:100%; */
     }
     100%{
-        top:-3rem;
+        transform: scale(0.5) translate3d( 0, -1800px ,800px);
     }
 }
 @-webkit-keyframes sweet{
@@ -156,7 +199,7 @@ body{
         /* top:100%; */
     }
     100%{
-        top:-3rem;
+        transform: scale(0.5) translate3d( 0, -1800px ,800px);
     }
 }
 @-ms-keyframes sweet{
@@ -164,7 +207,7 @@ body{
         /* top:100%; */
     }
     100%{
-        top:-3rem;
+        transform: scale(0.5) translate3d( 0, -1800px ,800px);
     }
 }
 @-moz-keyframes sweet{
@@ -172,8 +215,8 @@ body{
         /* top:100%; */
     }
     100%{
-        top:-3rem;
-    }
+        transform: scale(0.5) translate3d( 0, -1800px ,800px);
+    }   
 }
 
 
@@ -190,6 +233,9 @@ body{
     border-radius: .2rem;
     color:wheat;
     font-weight: 700;
+
+    transform:translate3d(0, 0, 0);
+    -webkit-transform:translate3d(0, 0, 0);
   }
   .rankingCon{
     /* width:; */
@@ -274,3 +320,20 @@ body{
     transform: rotate(360deg)
   }
 }
+
+.sweetContainer{
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+    border:5px solid red;
+    position: absolute;
+    top:0;left:0;
+    z-index: 10;
+    
+}
+.remove{
+    transition: .2s;
+    opacity: 0
+    /* border:yellow; */
+}
+
